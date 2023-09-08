@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    padding:0;
+    margin:0;
+    color: #fff;
+}
+.navb{
+    color: #fff;
+    text-decoration: none;
+    transition: all ease-in-out 0.5s;
+    border-bottom: 2px solid transparent;
+}
+body{
+    background-image: linear-gradient(to right,#01022d ,#000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-image: linear-gradient(to right,#01022d00 ,#000000bd),url(AVATARIMG.webp) ;
+    background-size: cover;
+    background-position:  center;
+    width: 94%;
+    height: 550px;
+    border-radius: 17px;
+}
+.container:hover{
+    background-position: center;
+    background-image: linear-gradient(to right,#01022d00 ,#00000028),url(AVATARIMG.webp) ;
+}
+.container header{
+    margin: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 28px;
+    cursor: pointer;
+}
+ul li{
+    list-style: none; 
+}
+.navb:hover{
+    border-bottom: 2px solid #ff0095;
+}
+ul{
+    display: flex;
+    align-items: center;
+   gap: 90px;
+}
+.content{
+    margin-top: 25px;
+    margin-left: 10px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.content h1{
+    font-weight: 900;
+    color: #71dfd5;
+}
+.content p{
+    width:40%;
+    font-size: 18px;
+}
+.content a{
+    margin-left: 50px;
+    width: 100px;
+    font-weight: 800;
+    border-radius: 17px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 8px 16px;
+    border: 2px solid #000;
+    transition: 0.5s ease-in-out;
+}
+.content a:hover{
+    background-color: #FAACA8;
+    color: black;
+    transform: skew(-5deg, -8deg);
+
+}
+a{
+    text-decoration: none;
+}
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 60px;
+}
+footer h2{
+    font-size:  24px;
+    
+}
+footer h2 span{
+    color:#ff0095 ;
+}
+footer .social{
+    font-size: 35px;
+    display: flex;
+    gap: 20px;
+    
+}
+footer .social a ion-icon{
+    transition: 0.5s ease-in-out;
+}
+footer .social a ion-icon:hover{
+
+    color: #3facdfd3;
+    transform: skew(-10deg, -10deg);
+}
+footer .w3 {
+  color: #4ecdc4;
+  font-weight: 900;
+}
+footer .w3 span{
+    font-weight: 500;
+    color: #e78f8e ;
+}
+@media (max-width: 1040px) {
+     .content p{
+        width:90%;
+        font-size: 16px;
+     }
+     header{
+        flex-direction: column;
+        gap: 10px;
+     }
+     ul{
+        gap: 30px;
+     }
+}
